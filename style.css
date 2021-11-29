@@ -21,6 +21,7 @@ li a{
 
 .box{
 position: relative;
+top: 54px;
 border-radius: 18px;
 overflow: hidden;
 width: 100%;
@@ -47,7 +48,19 @@ text-decoration: none!important;
 /* Font Awesome Icons have variable width. Added fixed width to fix that.*/
 .icon-width { width: 2rem;}
 .logo-img{
-  width: 15%;
+  width: 8%;
+  float: left;
+}
+.navbar-inverse {
+  background-color: #fff !important;
+  border-color: #eee6e6 !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #000 !important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #000 !important;
+  background-color: #ddd9d9 !important;
 }
 .contain {
   /* box-shadow: 0 3px 5px #efefef; */
@@ -108,6 +121,61 @@ font-weight: bold;
  .row2{
    display: flex;
  }
+
+ /* *********************************
+           Variables
+  ********************************** */
+/* *********************************
+   Some Style Overrides on Bootstrap
+  ********************************** */
+.navbar-inverse {
+  background: rgba(215, 227, 230, 0.767);
+  border-bottom: none;
+}
+
+.navbar-inverse .navbar-toggle {
+  border: 1px solid #333;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: transparent;
+}
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background: rgba(255, 255, 255, 0.75);
+  }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: black;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #22F;
+}
+
+/* *********************************
+           Toolbar Logo
+  ********************************** */
+.small-logo-container {
+  padding-top: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.small-logo {
+  color: white;
+  font-size: 2.5em;
+  padding-bottom: 2px;
+}
+
+/* *********************************
+           Big Logo
+  ********************************** */
+
+
 
  
 
@@ -303,17 +371,36 @@ transition: all 250ms ease-in-out 0s;
   }
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 576px){
+  .logo-img {
+    width: 25%;
+  }
+  .navbar-toggle{
+    background-color: #fff !important;
+  }
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000 !important;
+  }
+  .navbar-nav {
+    margin: 0px !important;
+    width: 100%;
+  }
   .box {
-    height: 370px;
+    height: 550px;
+    top: 58px;
   }
   .box img {
-    height: 90%;
+    height: 55%;
+  }
+  .box img {
+    margin: 10px 15px;
+    width: 94%;
   }
   .contain {
-    top: 70px;
-    left: 10px;
-    width: 211px;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-53%);
+    width: 300px;
     height: 160px;
     padding: 0px 15px 5px 15px;
   }
