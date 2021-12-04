@@ -372,11 +372,18 @@ transition: all 250ms ease-in-out 0s;
 }
 
 @media only screen and (max-width: 576px){
+  .navbar-inverse {
+    height: 60px;
+  }
   .logo-img {
-    width: 32%;
+    width: 36%;
+    margin-top: 6px;
+    margin-bottom: 6px;
   }
   .navbar-toggle{
     background-color: #fff !important;
+    margin-top: 13px !important;
+    margin-bottom: 13px !important;
   }
   .navbar-inverse .navbar-toggle .icon-bar {
     background-color: #000 !important;
@@ -395,12 +402,13 @@ transition: all 250ms ease-in-out 0s;
   }
   .box img {
     margin: 10px 15px;
-    height: 40%;
+    height: 45%;
+    width: 100%;
+    margin-top: 0px;
   }
   .contain {
-    top: 210px;
-    left: 50%;
-    transform: translateX(-54%);
+    top: 220px;
+    left: 0%;
     width: 300px;
     height: 160px;
     padding: 0px 15px 5px 15px;
@@ -430,11 +438,14 @@ transition: all 250ms ease-in-out 0s;
   }
 }
 @media only screen and (max-width: 380px) {
-  .box img {
+  /* .box img {
     height: 37%;
     width: 80%;
-  }
+  } */
   .contain{
     width: 275px;
   }
 }
+
+
+
