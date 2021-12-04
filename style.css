@@ -373,7 +373,7 @@ transition: all 250ms ease-in-out 0s;
 
 @media only screen and (max-width: 576px){
   .logo-img {
-    width: 25%;
+    width: 32%;
   }
   .navbar-toggle{
     background-color: #fff !important;
