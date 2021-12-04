@@ -48,7 +48,8 @@ text-decoration: none!important;
 /* Font Awesome Icons have variable width. Added fixed width to fix that.*/
 .icon-width { width: 2rem;}
 .logo-img{
-  width: 8%;
+  width: 12%;
+  margin-top: 2px;
   float: left;
 }
 .navbar-inverse {
