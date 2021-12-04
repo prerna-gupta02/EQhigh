@@ -386,20 +386,21 @@ transition: all 250ms ease-in-out 0s;
     width: 100%;
   }
   .box {
-    height: 550px;
+    height: 490px;
     top: 58px;
   }
-  .box img {
-    height: 55%;
+  .box .img {
+    display: flex;
+    justify-content: center;
   }
   .box img {
     margin: 10px 15px;
-    width: 94%;
+    height: 40%;
   }
   .contain {
-    top: 320px;
+    top: 210px;
     left: 50%;
-    transform: translateX(-53%);
+    transform: translateX(-54%);
     width: 300px;
     height: 160px;
     padding: 0px 15px 5px 15px;
@@ -428,6 +429,12 @@ transition: all 250ms ease-in-out 0s;
     width: calc(100% - 1px) !important;
   }
 }
-
-
-
+@media only screen and (max-width: 380px) {
+  .box img {
+    height: 37%;
+    width: 80%;
+  }
+  .contain{
+    width: 275px;
+  }
+}
